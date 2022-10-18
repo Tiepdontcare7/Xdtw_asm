@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- npx tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-b border-solid boder-[#ccc] py-8">
+        <div class="container flex justify-between items-center">
+            <a href="">
+                <img class="md:w-[85%] lg:w-full" srcset="./img/logo.png 2x" alt="" />
+            </a>
+            <ul class="main-menu flex">
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="#about">About
+                        Us</a>
+                </li>
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+            <div class="header-contact">
+                <a href="contact.html"
+                    class="header-btn btn-primary py-[12px] lg:px-[65px] md:px-[50px] inline-block">Contact</a>
+            </div>
+            <div class="mobile-left">
+                <div class="mobile-menu-icon">
+                    <ion-icon name="menu"></ion-icon>
+                    <ul class="menu-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner pb-[100px] pt-[50px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 items-center">
+                <div class="col">
+                    <h2 class="banner-title font-bold text-[58px] lg:text-left sm:text-center">
+                        We are the best agency in the world
+                    </h2>
+                    <p class="banner-desc font-normal text-lg leading-[160%] mb-[80px]">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div class="banner__list-button flex lg:justify-start sm:justify-center">
+                        <a class="btn-primary px-[38px] py-[12px]" href="">Start a Project</a>
+                        <a class="px-[38px] py-[12px] text-[#0099FF] border border-solid border-[#0099FF] ml-3 rounded"
+                            href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="col md:mt-0 mt-[20px]">
+                    <div>
+                        <img srcset="./img/banner-main.png 2x" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services bg-[#F5FBFF] pt-[120px] pb-[120px]">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="section-title">Services</h2>
+                <h3 class="section-slogan">We Provide</h3>
+                <p class="section-desc mb-[72px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+                    mattis nunc aliquam tincidunt est non. Viverra nec eu.
+                </p>
+            </header>
+            <div id="em" class="sv-row grid lg:grid-cols-4 md:grid-cols-2 md:gap-y-4 gap-x-4">
+                <!-- <div class="col text-center bg-white px-[26.5px] py-[57.5px] rounded shadow-main-shadow">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-[16px]" srcset="./img/sv-1.png 2x" alt="" />
+                    </div>
+                    <h3 class="font-bold text-[32px] mb-[24px]">Web Design</h3>
+                    <p class="font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="col text-center bg-white px-[26.5px] py-[57.5px] rounded shadow-main-shadow">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-[16px]" srcset="./img/sv-2.png 2x" alt="" />
+                    </div>
+                    <h3 class="font-bold text-[32px] mb-[24px]">Web Design</h3>
+                    <p class="font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="col text-center bg-white px-[26.5px] py-[57.5px] rounded shadow-main-shadow">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-[16px]" srcset="./img/sv-3.png 2x" alt="" />
+                    </div>
+                    <h3 class="font-bold text-[32px] mb-[24px]">Web Design</h3>
+                    <p class="font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="col text-center bg-white px-[26.5px] py-[57.5px] rounded shadow-main-shadow">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-[16px]" srcset="./img/sv-4.png 2x" alt="" />
+                    </div>
+                    <h3 class="font-bold text-[32px] mb-[24px]">Web Design</h3>
+                    <p class="font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about md:pt-[167px] pb-[120px]">
+        <div class="container">
+            <div class="about-row grid md:grid-cols-2 items-center">
+                <div>
+                    <img srcset="./img/about-img.jpg 2x" alt="" />
+                </div>
+                <div class="">
+                    <h2 class="about-title font-semibold text-[20px] mb-4">About Us</h2>
+                    <h3 class="about-slogan font-[700] text-5xl mb-6">We are a creative agencys</h3>
+                    <p class="about-desc mb-10">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec,
+                        luctus sapien vulputate urna tempor euismod adipiscing massa.
+                        Volutpat nunc quis dictum consectetur egestas varius. <br />
+                        <br />
+                        Ac sagittis tellus, sodales commodo elit, social purus. Egesta
+                        mauris eget commodo commodo et vel fermentum ultrices.
+                    </p>
+                    <div>
+                        <a class="btn-primary px-[36px] py-[12px]">
+                            More About Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-team bg-[#F5FBFf] pt-[120px] pb-[80px]">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="section-title">Meet Our Team</h2>
+                <h3 class="section-slogan">Our Expert Members</h3>
+                <p class="section-desc mb-[80px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                    vivamus pretium maecenas amet.
+                </p>
+            </header>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-4 md:gap-10 mt-[120px]">
+                <div>
+                    <div>
+                        <img class="w-full" srcset="./img/team-1.jpg 2x" alt="" />
+                    </div>
+                    <div
+                        class="bg-white pt-3 pl-3 pb-[22px] pr-3 shadow-main-shadow w-[85%] translate-y-[-50%] relative mx-auto rounded">
+                        <ul class="flex m-0 p-0 no-list">
+                            <li>
+                                <ion-icon class="" name="logo-facebook"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-pinterest"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                        </ul>
+                        <span class="block font-bold text-2xl">Jane Cooper</span>
+                        <span class="block font-normal text-lg">Developer</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="w-full" srcset="./img/team-2.jpg 2x" alt="" />
+                    </div>
+                    <div
+                        class="bg-white pt-3 pl-3 pb-[22px] pr-3 shadow-main-shadow w-[85%] translate-y-[-50%] relative mx-auto rounded">
+                        <ul class="flex m-0 p-0 no-list">
+                            <li>
+                                <ion-icon class="" name="logo-facebook"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-pinterest"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                        </ul>
+                        <span class="block font-bold text-2xl">Jane Cooper</span>
+                        <span class="block font-normal text-lg">Developer</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="w-full" srcset="./img/team-3.jpg 2x" alt="" />
+                    </div>
+                    <div
+                        class="bg-white pt-3 pl-3 pb-[22px] pr-3 shadow-main-shadow w-[85%] translate-y-[-50%] relative mx-auto rounded">
+                        <ul class="flex m-0 p-0 no-list">
+                            <li>
+                                <ion-icon class="" name="logo-facebook"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-pinterest"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                        </ul>
+                        <span class="block font-bold text-2xl">Jane Cooper</span>
+                        <span class="block font-normal text-lg">Developer</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="w-full" srcset="./img/team-4.jpg 2x" alt="" />
+                    </div>
+                    <div
+                        class="bg-white pt-3 pl-3 pb-[22px] pr-3 shadow-main-shadow w-[85%] translate-y-[-50%] relative mx-auto rounded">
+                        <ul class="flex m-0 p-0 no-list">
+                            <li>
+                                <ion-icon class="" name="logo-facebook"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-pinterest"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="ml-3" name="logo-instagram"></ion-icon>
+                            </li>
+                        </ul>
+                        <span class="block font-bold text-2xl">Jane Cooper</span>
+                        <span class="block font-normal text-lg">Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio pt-[124px] pb-[120px]">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="section-title">Portfolio</h2>
+                <h3 class="section-slogan">Our Recent Works</h3>
+                <p class="section-desc max-w-[613px] mx-auto mb-[86px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+                    mattis nunc aliquam tincidunt est non. Viverra nec eu.
+                </p>
+            </header>
+            <div class="grid md:grid-cols-3 gap-4 mb-10">
+                <div class="shadow-po-shadow p-5">
+                    <div>
+                        <a href="portfolio-item1.html"><img class="mb-[26px]" srcset="./img/po-1.jpg 2x" alt="" /></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <a href="portfolio-item1.html">
+                            <h3 class="font-bold text-[32px] mb-5">Real estate websites</h3>
+                            <p class="font-normal text-sm mb-[32px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                sed consectetur malesuada sodales enim viverra odio diam.
+                                Nascetur dui elementum,
+                            </p>
+                        </a>
+                        <div class="flex items-center border-b-2 max-w-[98px] pb-[5px] border-b-[#0099FF]">
+                            <a href="./portfolio-item1.html">Read more</a>
+                            <ion-icon class="pt-[2px]" name="chevron-forward-outline"></ion-icon>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="shadow-po-shadow p-5">
+                    <div>
+                        <img class="mb-[26px]" srcset="./img/po-2.jpg 2x" alt="" />
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="font-bold text-[32px] mb-5">Real estate websites</h3>
+                        <p class="font-normal text-sm mb-[32px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            sed consectetur malesuada sodales enim viverra odio diam.
+                            Nascetur dui elementum,
+                        </p>
+                        <div class="flex items-center border-b-2 max-w-[98px] pb-[5px] border-b-[#0099FF]">
+                            <a href="">Read more</a>
+                            <ion-icon class="pt-[2px]" name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-po-shadow p-5">
+                    <div>
+                        <img class="mb-[26px]" srcset="./img/po-3.jpg 2x" alt="" />
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="font-bold text-[32px] mb-5">Real estate websites</h3>
+                        <p class="font-normal text-sm mb-[32px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            sed consectetur malesuada sodales enim viverra odio diam.
+                            Nascetur dui elementum,
+                        </p>
+                        <div class="flex items-center border-b-2 max-w-[98px] pb-[5px] border-b-[#0099FF]">
+                            <a href="">Read more</a>
+                            <ion-icon class="pt-[2px]" name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <a href="portfolio.html" class="portfolio-btn btn-primary px-[32px] py-3">See All Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq bg-[#F2FAFF] pt-[120px] pb-[120px]">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="section-title">FAQ’S</h2>
+                <h3 class="section-slogan">Find the answers you need</h3>
+            </header>
+            <ul class="mw-956 mt-[80px] m-0 p-0">
+                <li id="faq-li" class="bg-white max-w-[956px] mx-auto p-8 mb-[24px] rounded shadow-main-shadow">
+                    <div class="flex items-center justify-between mb-[21px]">
+                        <h4 class="font-medium text-lg">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </h4>
+                        <ion-icon name="arrow-down"></ion-icon>
+                    </div>
+                    <p class="faq-desc font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                        ornare in eget mauris. Porttitor semper sed nisi ac adipiscing
+                        vitae. Lobortis imperdiet ornare eleifend nisl ut auctor. Ornare
+                        etiam neque elementum mattis ultrices.
+                    </p>
+                </li>
+                <li id="faq-li" class="bg-white max-w-[956px] mx-auto p-8 mb-[24px] rounded shadow-main-shadow">
+                    <div class="flex items-center justify-between mb-[21px]">
+                        <h4 class="font-medium text-lg">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </h4>
+                        <ion-icon name="arrow-down"></ion-icon>
+                    </div>
+                    <p class="faq-desc font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                        ornare in eget mauris. Porttitor semper sed nisi ac adipiscing
+                        vitae. Lobortis imperdiet ornare eleifend nisl ut auctor. Ornare
+                        etiam neque elementum mattis ultrices.
+                    </p>
+                </li>
+                <li id="faq-li" class="bg-white max-w-[956px] mx-auto p-8 mb-[24px] rounded shadow-main-shadow">
+                    <div class="flex items-center justify-between mb-[21px]">
+                        <h4 class="font-medium text-lg">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </h4>
+                        <ion-icon name="arrow-down"></ion-icon>
+                    </div>
+                    <p class="faq-desc font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                        ornare in eget mauris. Porttitor semper sed nisi ac adipiscing
+                        vitae. Lobortis imperdiet ornare eleifend nisl ut auctor. Ornare
+                        etiam neque elementum mattis ultrices.
+                    </p>
+                </li>
+                <li id="faq-li" class="bg-white max-w-[956px] mx-auto p-8 mb-[24px] rounded shadow-main-shadow">
+                    <div class="flex items-center justify-between mb-[21px]">
+                        <h4 class="font-medium text-lg">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </h4>
+                        <ion-icon name="arrow-down"></ion-icon>
+                    </div>
+                    <p class="faq-desc font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                        ornare in eget mauris. Porttitor semper sed nisi ac adipiscing
+                        vitae. Lobortis imperdiet ornare eleifend nisl ut auctor. Ornare
+                        etiam neque elementum mattis ultrices.
+                    </p>
+                </li>
+                <li id="faq-li" class="bg-white max-w-[956px] mx-auto p-8 rounded shadow-main-shadow">
+                    <div class="flex items-center justify-between mb-[21px]">
+                        <h4 class="font-medium text-lg">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </h4>
+                        <ion-icon name="arrow-down"></ion-icon>
+                    </div>
+                    <p class="faq-desc font-normal text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                        ornare in eget mauris. Porttitor semper sed nisi ac adipiscing
+                        vitae. Lobortis imperdiet ornare eleifend nisl ut auctor. Ornare
+                        etiam neque elementum mattis ultrices.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="testimonials pt-[120px]">
+        <div class="container">
+            <header>
+                <h3 class="section-slogan tes-slogan">Customer testimonials</h3>
+                <p class="section-desc tes-desc mb-[48px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </header>
+            <div class="testimonials-row grid md:grid-cols-3 gap-4 pb-[102px]">
+                <div class="p-8 shadow-md">
+                    <div class="flex mb-6">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <p class="mb-7 leading-5 font-normal text-sm">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique. Duis cursus,
+                        mi quis viverra ornare."
+                    </p>
+                    <div class="testimonials-user flex">
+                        <div>
+                            <img class="rounded-[50%]" srcset="./img/tmn-1.png 2x" alt="" />
+                        </div>
+                        <div class="ml-5">
+                            <span class="block font-semibold text-base leading-6">Jerome Bell</span>
+                            <span class="block font-normal text-base leading-6">Marketing Coordinator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 shadow-md">
+                    <div class="flex mb-6">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <p class="mb-7 leading-5 font-normal text-sm">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique. Duis cursus,
+                        mi quis viverra ornare."
+                    </p>
+                    <div class="testimonials-user flex">
+                        <div>
+                            <img class="rounded-[50%]" srcset="./img/tmn-2.png 2x" alt="" />
+                        </div>
+                        <div class="ml-5">
+                            <span class="block font-semibold text-base leading-6">Jerome Bell</span>
+                            <span class="block font-normal text-base leading-6">Marketing Coordinator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 shadow-md">
+                    <div class="flex mb-6">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <p class="mb-7 leading-5 font-normal text-sm">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique. Duis cursus,
+                        mi quis viverra ornare."
+                    </p>
+                    <div class="testimonials-user flex">
+                        <div>
+                            <img class="rounded-[50%]" srcset="./img/tmn-3.png 2x" alt="" />
+                        </div>
+                        <div class="ml-5">
+                            <span class="block font-semibold text-base leading-6">Jerome Bell</span>
+                            <span class="block font-normal text-base leading-6">Marketing Coordinator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subribes">
+                <div
+                    class="lg:py-[110px] md:py-[80px] lg:px-[96px] md:px-[40px] md:flex justify-between items-center bg-[#333]">
+                    <div class="lg:max-w-[475px] sm:max-w-[400px]">
+                        <h3 class="text-white font-bold text-[32px] mb-6">
+                            Do you have a project in mind?
+                        </h3>
+                        <p class="text-white text-center md:text-left">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit amet diam
+                            in est pharetra porttitor libero.
+                        </p>
+                    </div>
+                    <div class="subribes-right">
+                        <a class="btn-primary lg:px-[62.5px] md:px-14 py-[12px]">
+                            Let’s talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#F2FAFF] pt-[96px] pb-[92px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-3 lg:gap-4">
+                <div class="col">
+                    <div class="mb-[32px]">
+                        <img srcset="./img/logo.png 2x" alt="" />
+                    </div>
+                    <p class="font-normal text-lg mb-[32px]">
+                        Lorem ipsum dolor sit amet, <br />
+                        consectetur adipiscing elit. Molestie <br />
+                        nulla massa fringilla.
+                    </p>
+                    <div class="">
+                        <a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-pinterest"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-youtube"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="col flex justify-between">
+                    <div class="">
+                        <h3 class="font-semibold text-xl mb-10">Menu</h3>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5 hover:scale-110"
+                                href="">Home</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">About-Us</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Blog</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Blog post</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Contact</a></span>
+                    </div>
+                    <div class="lg:pr-[40px] sm:pl-[50px]">
+                        <h3 class="font-semibold text-xl mb-10">Utility Pages</h3>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Start Here</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Styleguide-Us</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Password
+                                Protected</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">404 Not Found</a>
+                        </span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Licenses</a></span>
+                    </div>
+                </div>
+                <div class="col pl-[55px]">
+                    <h3 class="font-bold text-xl mb-10">Subscribe to our newsletter</h3>
+                    <span class="mb-[32px] block">Lorem ipsum dolor sit amet consectetur adipiscing elit am dolor
+                        sit.</span>
+                    <div>
+                        <input
+                            class="px-[24px] w-full text-lg font-normal py-[12px] block bg-[#333] outline-fuchsia-600 rounded mb-[24px]"
+                            type="text" placeholder="Enter your email" />
+                        <a href="" class="btn-primary footer-btn px-[57px] py-[12px] inline-block">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

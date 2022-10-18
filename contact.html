@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-b border-solid boder-[#ccc] py-8">
+        <div class="container flex justify-between items-center">
+            <a href="">
+                <img class="md:w-[85%] lg:w-full" srcset="./img/logo.png 2x" alt="" />
+            </a>
+            <ul class="main-menu flex">
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="#about">About
+                        Us</a>
+                </li>
+                <li>
+                    <a class="font-medium lg:text-lg block lg:mx-[20px] md:w-full sm:mx-2 hover:underline hover:transition-all hover:text-[#0099FF]"
+                        href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+            <div class="header-contact">
+                <a href="contact.html"
+                    class="header-btn btn-primary py-[12px] lg:px-[65px] md:px-[50px] inline-block">Contact</a>
+            </div>
+            <div class="mobile-left">
+                <div class="mobile-menu-icon">
+                    <ion-icon name="menu"></ion-icon>
+                    <ul class="menu-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content max-w-[1065px] mx-auto shadow-po-shadow lg:px-[96px] lg:py-[40px] md:px-[76px] md:py-[20px] px-[25px] md:text-left my-[60px] rounded">
+        <div class="grid md:grid-cols-2 lg:gap-x-40 md:gap-x-[70px] gap-x-[20px] content-contact">
+            <div class="col">
+                <h2 class="font-bold text-[32px] leading-[42.56px] mb-5 md:text-left text-center">Now Start Your project</h2>
+                <span class="font-normal text-base mb-10 block md:text-left text-center">Fill up the from and our Team will get back to you
+                    within 24
+                    hours.</span>
+                <ul class="md:mb-[163px] mb-[44px]">
+                    <li class="mb-5 font-normal text-base">
+                        <ion-icon class="max-w-[50px] inline-block pr-[7px]" name="call"></ion-icon>
+                        +88012345678
+                    </li>
+                    <li class="mb-5 font-normal text-base">
+                        <ion-icon class="max-w-[50px] inline-block pr-[7px]" name="mail"></ion-icon>
+                        itagagency@gmail.com
+                    </li>
+                    <li class="mb5 font-normal text-base">
+                        <ion-icon class="max-w-[50px] inline-block pr-[7px]" name="pin"></ion-icon>
+                        Dhaka, Bangladesh
+                    </li>
+                </ul>
+                <ul class="flex">
+                    <li><a href="">
+                            <ion-icon class="inline-block" name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="">
+                            <ion-icon class="inline-block ml-[35px]" name="logo-pinterest"></ion-icon>
+                        </a></li>
+                    <li><a href="">
+                            <ion-icon class="inline-block ml-[35px]" name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="">
+                            <ion-icon class="inline-block ml-[35px]" name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="md:mt-0 mt-[90px]">
+                <form action="">
+                    <div>
+                        <label class="block font-semibold text-xl" for="">Full Name</label>
+                        <input required placeholder="John Doe"
+                            class="md:w-auto w-full border-b border-solid border-b-[#333] text-[14px] pr-[30px] outline-none pb-[1px]  pl-[3px] mt-[8px]"
+                            type="text">
+                    </div>
+                    <div class="my-[32px]">
+                        <label class="block font-semibold text-xl" for="">Email</label>
+                        <input required placeholder="itagencyc@gmail.com"
+                            class="md:w-auto w-full border-b border-solid border-b-[#333] text-[14px] pr-[30px] outline-none pb-[1px]  pl-[3px] mt-[8px]"
+                            type="email">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-xl mb-4" for="">What service do you want?</label>
+                        <div>
+                            <div class="inline-block">
+                                <input class="lg:ml-0 md:ml-[10px]" id="web" name="contact-check" type="radio">
+                                <label class="select-none ml-[2px]" for="web">Webflow
+                                </label>
+                            </div>
+                            <div class="inline-block ml-[10px]">
+                                <input id="ui" name="contact-check" type="radio">
+                                <label class="select-none ml-[2px]" for="ui">UI/UX Design
+                                </label>
+                            </div>
+                            <div class="inline-block ml-[10px]">
+                                <input id="seo" name="contact-check" type="radio">
+                                <label class="select-none ml-[2px]" for="seo">SEO
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-xl mt-[32px]" for="">Message</label>
+                        <input required placeholder="Write your message"
+                            class="border-b border-solid border-b-[#333] text-[14px] w-[100%] outline-none pb-[1px] pl-[3px] mt-[8px]"
+                            type="text">
+                    </div>
+                    <a href="#" class="btn-primary md:w-auto w-full text-center py-[12px] px-[57px] mt-[66px]" type="submit">Send message</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-[#F2FAFF] pt-[96px] pb-[92px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-3 lg:gap-4">
+                <div class="col">
+                    <div class="mb-[32px]">
+                        <img srcset="./img/logo.png 2x" alt="" />
+                    </div>
+                    <p class="font-normal text-lg mb-[32px]">
+                        Lorem ipsum dolor sit amet, <br />
+                        consectetur adipiscing elit. Molestie <br />
+                        nulla massa fringilla.
+                    </p>
+                    <div class="">
+                        <a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-pinterest"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-youtube"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="ml-4" name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="col flex justify-between">
+                    <div class="">
+                        <h3 class="font-semibold text-xl mb-10">Menu</h3>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5 hover:scale-110"
+                                href="">Home</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">About-Us</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Blog</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Blog post</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Contact</a></span>
+                    </div>
+                    <div class="lg:pr-[40px] sm:pl-[50px]">
+                        <h3 class="font-semibold text-xl mb-10">Utility Pages</h3>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Start Here</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Styleguide-Us</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Password
+                                Protected</a></span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">404 Not Found</a>
+                        </span>
+                        <span><a class="block font-normal text-lg text-[#494949] mb-5" href="">Licenses</a></span>
+                    </div>
+                </div>
+                <div class="col pl-[55px]">
+                    <h3 class="font-bold text-xl mb-10">Subscribe to our newsletter</h3>
+                    <span class="mb-[32px] block">Lorem ipsum dolor sit amet consectetur adipiscing elit am dolor
+                        sit.</span>
+                    <div>
+                        <input
+                            class="px-[24px] w-full text-lg font-normal py-[12px] block bg-[#333] outline-fuchsia-600 rounded mb-[24px]"
+                            type="text" placeholder="Enter your email" />
+                        <a href="" class="btn-primary footer-btn px-[57px] py-[12px] inline-block">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>
